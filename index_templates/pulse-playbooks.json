@@ -1,0 +1,10 @@
+{
+  "priority": 200,
+  "index_patterns": [
+    "project_playbooks*"
+  ],
+  "composed_of": [
+    "pulse-settings",
+    "pulse-mappings-playbooks"
+  ]
+}

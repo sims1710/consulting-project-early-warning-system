@@ -1,0 +1,71 @@
+{
+  "_meta": {
+    "description": "Field mappings for live in-flight projects index"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "budget_burn_delta": {
+          "type": "float"
+        },
+        "budget_burn_rate_wk": {
+          "type": "float"
+        },
+        "budget_spent": {
+          "type": "float"
+        },
+        "budget_total": {
+          "type": "float"
+        },
+        "client_tenure_months": {
+          "type": "integer"
+        },
+        "days_to_milestone": {
+          "type": "integer"
+        },
+        "distress_signal": {
+          "type": "boolean"
+        },
+        "fingerprint": {
+          "dims": 8,
+          "index": true,
+          "similarity": "cosine",
+          "type": "dense_vector"
+        },
+        "industry": {
+          "type": "keyword"
+        },
+        "last_updated": {
+          "type": "date"
+        },
+        "margin_at_risk_pct": {
+          "type": "float"
+        },
+        "phase": {
+          "type": "keyword"
+        },
+        "project_id": {
+          "type": "keyword"
+        },
+        "project_name": {
+          "type": "text"
+        },
+        "sentiment_score": {
+          "type": "float"
+        },
+        "sentiment_slope_14d": {
+          "type": "float"
+        },
+        "team_size": {
+          "type": "integer"
+        },
+        "velocity_current": {
+          "type": "float"
+        },
+        "velocity_delta": {
+          "type": "float"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "_meta": {
+    "description": "Field mappings for client communication sentiment time-series index"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "date": {
+          "type": "date"
+        },
+        "project_id": {
+          "type": "keyword"
+        },
+        "sentiment_score": {
+          "type": "float"
+        },
+        "snippet": {
+          "type": "text"
+        },
+        "source": {
+          "type": "keyword"
+        }
+      }
+    }
+  }
+}

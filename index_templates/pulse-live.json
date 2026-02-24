@@ -1,0 +1,10 @@
+{
+  "priority": 200,
+  "index_patterns": [
+    "projects_live*"
+  ],
+  "composed_of": [
+    "pulse-settings",
+    "pulse-mappings-live"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "_meta": {
+    "description": "Field mappings for historical closed projects index"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "burn_rate_acceleration": {
+          "type": "float"
+        },
+        "client_tenure_months": {
+          "type": "integer"
+        },
+        "closed_date": {
+          "type": "date"
+        },
+        "days_to_milestone": {
+          "type": "integer"
+        },
+        "fingerprint": {
+          "dims": 8,
+          "index": true,
+          "similarity": "cosine",
+          "type": "dense_vector"
+        },
+        "industry": {
+          "type": "keyword"
+        },
+        "intervention": {
+          "type": "keyword"
+        },
+        "margin_at_risk_pct": {
+          "type": "float"
+        },
+        "margin_impact_pct": {
+          "type": "float"
+        },
+        "notes": {
+          "type": "text"
+        },
+        "outcome": {
+          "type": "keyword"
+        },
+        "partner_overrode_agent": {
+          "type": "boolean"
+        },
+        "phase_at_detection": {
+          "type": "keyword"
+        },
+        "project_id": {
+          "type": "keyword"
+        },
+        "project_name": {
+          "type": "text"
+        },
+        "sentiment_slope": {
+          "type": "float"
+        },
+        "team_size": {
+          "type": "integer"
+        },
+        "velocity_delta": {
+          "type": "float"
+        },
+        "weeks_to_resolution": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "_meta": {
+    "description": "Field mappings for intervention playbooks index"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "avg_weeks": {
+          "type": "integer"
+        },
+        "description": {
+          "type": "text"
+        },
+        "distress_type": {
+          "type": "keyword"
+        },
+        "intervention": {
+          "type": "keyword"
+        },
+        "phase": {
+          "type": "keyword"
+        },
+        "playbook_id": {
+          "type": "keyword"
+        },
+        "success_rate_pct": {
+          "type": "float"
+        },
+        "title": {
+          "type": "text"
+        }
+      }
+    }
+  }
+}
