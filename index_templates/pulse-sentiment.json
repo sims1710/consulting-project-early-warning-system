@@ -4,7 +4,6 @@
     "projects_sentiment*"
   ],
   "composed_of": [
-    "pulse-settings",
     "pulse-mappings-sentiment"
   ]
 }

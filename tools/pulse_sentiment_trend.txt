@@ -1,0 +1,14 @@
+ES|QL type
+
+Description: Returns the 14-day sentiment time series for a specific project
+to show the trajectory of client communication tone.
+
+Query:
+FROM projects_sentiment
+| WHERE project_id == ?project_id
+| SORT date ASC
+| KEEP date, sentiment_score, source, snippet
+| LIMIT 20
+
+Parameters:
+  project_id (string, required) — The project ID to retrieve sentiment for e.g. LIVE-001

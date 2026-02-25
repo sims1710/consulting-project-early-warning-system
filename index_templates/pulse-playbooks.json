@@ -4,7 +4,6 @@
     "project_playbooks*"
   ],
   "composed_of": [
-    "pulse-settings",
     "pulse-mappings-playbooks"
   ]
 }

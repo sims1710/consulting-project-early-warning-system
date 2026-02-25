@@ -1,0 +1,6 @@
+POST kbn://internal/kibana/settings
+{
+  "changes": {
+    "agentBuilder:enabled": true
+  }
+}

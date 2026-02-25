@@ -1,0 +1,7 @@
+Index Search type
+
+Index: project_playbooks
+
+Description: Retrieves intervention playbooks for consulting project distress situations.
+Each playbook contains a specific intervention strategy, its success rate, and
+step-by-step guidance. Use this to recommend concrete actions.

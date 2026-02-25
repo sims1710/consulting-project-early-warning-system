@@ -1,0 +1,8 @@
+Index Search type
+
+Index: projects_historical
+
+Description: Searches historical consulting projects by outcome, intervention type,
+industry, or phase to find precedents relevant to a current distress situation.
+Use this to find past projects that were rescued, escalated, or lost and what
+interventions were taken.

@@ -1,0 +1,22 @@
+ES|QL type
+
+Description: Detects live consulting projects showing compound distress signals —
+accelerating budget burn, dropping velocity, and negative client sentiment simultaneously.
+
+Query:
+FROM projects_live
+| WHERE distress_signal == true
+| WHERE budget_burn_delta > 0.35
+| WHERE velocity_delta < -0.25
+| WHERE sentiment_slope_14d < -0.30
+| WHERE margin_at_risk_pct > 20.0
+| EVAL budget_utilisation_pct = ROUND((budget_spent / budget_total) * 100, 1)
+| EVAL weeks_of_budget_left = ROUND((budget_total - budget_spent) / budget_burn_rate_wk, 1)
+| KEEP project_id, project_name, industry, phase,
+       budget_utilisation_pct, budget_burn_delta,
+       velocity_current, velocity_delta,
+       sentiment_score, sentiment_slope_14d,
+       margin_at_risk_pct, weeks_of_budget_left,
+       team_size, client_tenure_months, days_to_milestone
+| SORT margin_at_risk_pct DESC
+| LIMIT 10
