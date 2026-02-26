@@ -1,0 +1,44 @@
+{
+  "_meta": {
+    "description": "Field mappings for pulse actions index"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "action_type": {
+          "type": "keyword"
+        },
+        "completed_at": {
+          "type": "date"
+        },
+        "confidence": {
+          "type": "float"
+        },
+        "created_at": {
+          "type": "date"
+        },
+        "created_by": {
+          "type": "keyword"
+        },
+        "instructions": {
+          "type": "text"
+        },
+        "outcome_notes": {
+          "type": "text"
+        },
+        "project_id": {
+          "type": "keyword"
+        },
+        "reasoning": {
+          "type": "text"
+        },
+        "review_by": {
+          "type": "date"
+        },
+        "status": {
+          "type": "keyword"
+        }
+      }
+    }
+  }
+}

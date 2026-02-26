@@ -1,0 +1,24 @@
+{"index": {"_index": "projects_live_timeseries", "_id": "LIVE-001-W1"}}
+{"project_id": "LIVE-001", "project_name": "NovaBanc Core Banking Migration", "week": "2026-02-03", "week_number": 1, "budget_burn_rate_wk": 48200, "velocity_points": 31, "sentiment_score": 0.61, "team_utilisation_pct": 88}
+{"index": {"_index": "projects_live_timeseries", "_id": "LIVE-001-W2"}}
+{"project_id": "LIVE-001", "project_name": "NovaBanc Core Banking Migration", "week": "2026-02-10", "week_number": 2, "budget_burn_rate_wk": 53100, "velocity_points": 27, "sentiment_score": 0.48, "team_utilisation_pct": 93}
+{"index": {"_index": "projects_live_timeseries", "_id": "LIVE-001-W3"}}
+{"project_id": "LIVE-001", "project_name": "NovaBanc Core Banking Migration", "week": "2026-02-17", "week_number": 3, "budget_burn_rate_wk": 61400, "velocity_points": 22, "sentiment_score": 0.34, "team_utilisation_pct": 97}
+{"index": {"_index": "projects_live_timeseries", "_id": "LIVE-001-W4"}}
+{"project_id": "LIVE-001", "project_name": "NovaBanc Core Banking Migration", "week": "2026-02-24", "week_number": 4, "budget_burn_rate_wk": 71800, "velocity_points": 18, "sentiment_score": 0.21, "team_utilisation_pct": 99}
+{"index": {"_index": "projects_live_timeseries", "_id": "LIVE-002-W1"}}
+{"project_id": "LIVE-002", "project_name": "RetailCo Loyalty Platform", "week": "2026-02-03", "week_number": 1, "budget_burn_rate_wk": 31200, "velocity_points": 38, "sentiment_score": 0.72, "team_utilisation_pct": 81}
+{"index": {"_index": "projects_live_timeseries", "_id": "LIVE-002-W2"}}
+{"project_id": "LIVE-002", "project_name": "RetailCo Loyalty Platform", "week": "2026-02-10", "week_number": 2, "budget_burn_rate_wk": 32800, "velocity_points": 36, "sentiment_score": 0.69, "team_utilisation_pct": 83}
+{"index": {"_index": "projects_live_timeseries", "_id": "LIVE-002-W3"}}
+{"project_id": "LIVE-002", "project_name": "RetailCo Loyalty Platform", "week": "2026-02-17", "week_number": 3, "budget_burn_rate_wk": 33100, "velocity_points": 35, "sentiment_score": 0.71, "team_utilisation_pct": 82}
+{"index": {"_index": "projects_live_timeseries", "_id": "LIVE-002-W4"}}
+{"project_id": "LIVE-002", "project_name": "RetailCo Loyalty Platform", "week": "2026-02-24", "week_number": 4, "budget_burn_rate_wk": 33900, "velocity_points": 34, "sentiment_score": 0.68, "team_utilisation_pct": 84}
+{"index": {"_index": "projects_live_timeseries", "_id": "LIVE-003-W1"}}
+{"project_id": "LIVE-003", "project_name": "HealthPlus EHR Migration", "week": "2026-02-03", "week_number": 1, "budget_burn_rate_wk": 22400, "velocity_points": 44, "sentiment_score": 0.81, "team_utilisation_pct": 74}
+{"index": {"_index": "projects_live_timeseries", "_id": "LIVE-003-W2"}}
+{"project_id": "LIVE-003", "project_name": "HealthPlus EHR Migration", "week": "2026-02-10", "week_number": 2, "budget_burn_rate_wk": 23100, "velocity_points": 43, "sentiment_score": 0.79, "team_utilisation_pct": 76}
+{"index": {"_index": "projects_live_timeseries", "_id": "LIVE-003-W3"}}
+{"project_id": "LIVE-003", "project_name": "HealthPlus EHR Migration", "week": "2026-02-17", "week_number": 3, "budget_burn_rate_wk": 22800, "velocity_points": 45, "sentiment_score": 0.83, "team_utilisation_pct": 73}
+{"index": {"_index": "projects_live_timeseries", "_id": "LIVE-003-W4"}}
+{"project_id": "LIVE-003", "project_name": "HealthPlus EHR Migration", "week": "2026-02-24", "week_number": 4, "budget_burn_rate_wk": 22600, "velocity_points": 46, "sentiment_score": 0.84, "team_utilisation_pct": 72}

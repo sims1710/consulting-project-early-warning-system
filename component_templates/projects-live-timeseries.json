@@ -1,0 +1,35 @@
+{
+  "_meta": {
+    "description": "Field mappings for pulse actions index"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "budget_burn_rate_wk": {
+          "type": "float"
+        },
+        "project_id": {
+          "type": "keyword"
+        },
+        "project_name": {
+          "type": "keyword"
+        },
+        "sentiment_score": {
+          "type": "float"
+        },
+        "team_utilisation_pct": {
+          "type": "float"
+        },
+        "velocity_points": {
+          "type": "float"
+        },
+        "week": {
+          "type": "date"
+        },
+        "week_number": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}

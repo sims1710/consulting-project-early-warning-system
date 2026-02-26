@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "description": "Field mappings for pulse decisions index"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "human_choice": {
+          "type": "keyword"
+        },
+        "human_notes": {
+          "type": "text"
+        },
+        "resolved_at": {
+          "type": "date"
+        }
+      }
+    }
+  }
+}
