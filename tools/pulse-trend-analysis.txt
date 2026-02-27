@@ -14,21 +14,13 @@ FROM projects_live_timeseries
 | WHERE project_id == ?project_id
 | SORT week ASC
 | STATS
-weeks_of_data        = COUNT(*),
-burn_week1           = MIN(budget_burn_rate_wk),
-burn_latest          = MAX(budget_burn_rate_wk),
-velocity_week1       = MAX(velocity_points),
-velocity_latest      = MIN(velocity_points),
-sentiment_start      = MAX(sentiment_score),
-sentiment_latest     = MIN(sentiment_score),
-avg_team_utilisation = ROUND(AVG(team_utilisation_pct), 1)
-| EVAL burn_change_pct        = ROUND(((burn_latest - burn_week1) / burn_week1) * 100, 1)
-| EVAL velocity_change_pct    = ROUND(((velocity_latest - velocity_week1) / velocity_week1) * 100, 1)
-| EVAL sentiment_change       = ROUND(sentiment_latest - sentiment_start, 2)
-| EVAL burn_accelerating      = burn_change_pct > 20
-| EVAL velocity_deteriorating = velocity_change_pct < -15
-| EVAL sentiment_drifting     = sentiment_change < -0.2
-| KEEP weeks_of_data, burn_week1, burn_latest, burn_change_pct, burn_accelerating,
-velocity_week1, velocity_latest, velocity_change_pct, velocity_deteriorating,
-sentiment_start, sentiment_latest, sentiment_change, sentiment_drifting,
-avg_team_utilisation
+    weeks_tracked        = COUNT(*),
+    burn_week_earliest   = MIN(budget_burn_rate_wk),
+    burn_week_latest     = MAX(budget_burn_rate_wk),
+    velocity_earliest    = MAX(velocity_points),
+    velocity_latest      = MIN(velocity_points),
+    sentiment_earliest   = MAX(sentiment_score),
+    sentiment_latest     = MIN(sentiment_score)
+| EVAL burn_change_pct     = ROUND(((burn_week_latest - burn_week_earliest) / burn_week_earliest) * 100, 1)
+| EVAL velocity_change_pct = ROUND(((velocity_latest - velocity_earliest) / velocity_earliest) * 100, 1)
+| EVAL sentiment_change    = ROUND(sentiment_latest - sentiment_earliest, 2)
